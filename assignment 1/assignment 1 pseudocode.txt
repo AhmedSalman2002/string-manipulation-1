@@ -1,0 +1,34 @@
+//DECLARATION
+DECLARE myStr1, myStr2 : STRING
+DECLARE C, N :INTEGER
+DECLARE myChar : CHAR
+DECLARE Pangram : BOOLEAN
+
+//INITIALIZATION
+myStr1 ← ""
+myStr2 ← "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+C ← 0
+myChar ← ""
+Pangram ← TRUE
+
+//INPUT
+INPUT"Please Enter A String: ", myStr1
+mystr1 ← UCASE(myStr1)
+
+//PROCESSING
+FOR C ← 1 TO LEN(myStr2)
+    myChar ← MID(myStr2, C, 1)
+    N ← LOCATE(myStr1, myChar)
+    IF N ← 0 
+      THEN
+        Pangram ← FALSE
+    ENDIF
+NEXT 
+
+//OUTPUT
+IF Pangram = TRUE
+  THEN
+    OUTPUT"Entered String Is a Pangram")
+  ELSE
+    OUTPUT("Entered String Is a NOT a Pangram")
+ENDIF
