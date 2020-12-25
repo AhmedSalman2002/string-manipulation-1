@@ -1,0 +1,28 @@
+//DECLARATION
+DECLARE stra, strb, strc, strd, L1, L2, L3, L4 : STRING
+
+//INITIALIZATION
+stra ← ""
+strb ← ""
+strc ← ""
+strd ← ""
+L1 ← ""
+L2 ← ""
+L3 ← ""
+L4 ← ""
+
+//INPUT
+INPUT"please enter first string: ", stra
+INPUT"please enter second string: ", strb 
+
+//PROCESS
+L1 ← LEFT(stra, 2)
+L2 ← RIGHT(strb, 1)
+strc ← L1 & L2
+
+L3 ← LEFT(strb, 2)
+L4 ← RIGHT(stra, 1)
+strd ← L3 & L4
+
+//OUTPUT
+OUTPUT"your string is: " + strc + " " + strd)
