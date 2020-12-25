@@ -1,0 +1,35 @@
+//DECLARATION
+DECLARE stra, strb, strc : String
+DECLARE N : Integer
+
+//INITIALIZATION
+stra ← ""
+strb ← "ly"
+strc ← "ing"
+N ← 0
+
+//INPUT
+INPUT"please enter a string: ", stra
+
+
+//PROCESS
+N ← LOCATE(stra, "ing")
+
+IF LEN(stra) < 3 
+  THEN
+    OUTPUT"your string is: " + stra
+
+  ELSEIF Len(stra) > 3 
+    THEN
+      IF N > 0 
+        THEN
+          stra ← stra + strb
+          OUTPUT"your string is: " + stra
+      End If
+End If
+
+IF N = 0 
+  Then
+    stra ← stra + strc
+    OUTPUT"your string is: "+ stra
+End If
